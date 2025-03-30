@@ -1,10 +1,12 @@
 body.dark-bg {
-  background: #0B1E33;         /* dunkles Blau → Hintergrund */
-  color: #fff;                 /* weißer Text */
-  font-family: Arial, sans-serif;  /* moderne, klare Schrift */
-  margin: 0;                   /* kein Abstand zum Fensterrand */
-  padding: 2rem;               /* Luft zum Inhalt */
-  .container {
+  background: #0B1E33;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
@@ -26,7 +28,3 @@ body.dark-bg {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-}
-
-
