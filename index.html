@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>OmniShadowConsulting – Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="dark-bg">
+  <div class="container login-container">
+    <h1 class="title">Willkommen bei <span class="highlight">OmniShadowConsulting</span></h1>
+    <p class="subtitle">Bitte geben Sie Ihren Zugangscode ein:</p>
+    <input type="password" id="passwordField" placeholder="Zugangscode" class="password-input" />
+    <button id="loginBtn" class="btn">Login</button>
+    <p id="errorMsg" class="error-msg"></p>
+  </div>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      const pass = document.getElementById('passwordField').value.trim();
+      if (pass === "TrustNo1!") {
+        window.location.href = "it-consulting.html";
+      } else if (pass === "CyberPLC2025!") {
+        window.location.href = "ot-consulting.html";
+      } else {
+        document.getElementById('errorMsg').textContent = "Falscher Zugangscode!";
+      }
+    });
+  </script>
+</body>
+</html>
 
